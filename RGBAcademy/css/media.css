@@ -2,7 +2,18 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+	.progress{
+		width: 670px;
+	}
+	.ready-point1 {
+		left: 170px;
+	}
+	.point2 {
+    	left: 470px;
+	}
+	.point3 {
+    	right: 155px;
+	}
 
 }
 
@@ -27,6 +38,24 @@
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
+
+
+	.section1{
+		height: 640px;
+	}
+	.section1 h1{
+		margin: 0;
+	}
+	.round-item{
+		margin-top: 35px;
+	}
+	.round-item:hover{
+		width: 112px;
+		height: 112px;
+		margin-top: 35px;
+		padding-top: 0;
+	}
+
 
 	
 
@@ -53,9 +82,17 @@
 		height: 45px;
 	}
 
-
-
-
+	
+	.section1{
+		padding-top: 20px;
+		height: 680px;
+	}
+	.section1 h1{
+		font-size: 30px;
+	}
+	.content-wrap{
+		padding: 25px 25px 25px;
+	}
 
 
 
