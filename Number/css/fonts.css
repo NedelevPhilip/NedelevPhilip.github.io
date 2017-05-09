@@ -1,0 +1,20 @@
+/* font-family: "CircularStr"; */
+@font-face {
+	font-family: "CircularStr";
+	src: url("../fonts/CircularStr/CircularStd.eot");
+	src: url("../fonts/CircularStr/CircularStd.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/CircularStr/CircularStd.woff") format("woff"),
+	url("../fonts/CircularStr/CircularStd.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "CircularStrBold"; */
+@font-face {
+	font-family: "CircularStrBold";
+	src: url("../fonts/CircularStr/CircularStd-Bold.eot");
+	src: url("../fonts/CircularStr/CircularStd-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/CircularStr/CircularStd-Bold.woff") format("woff"),
+	url("../fonts/CircularStr/CircularStd-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
