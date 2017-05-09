@@ -8,3 +8,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: "Futura-Bold";
+	src: url("../fonts/Futura-Bold/Futura-Bold.eot");
+	src: url("../fonts/Futura-Bold/Futura-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Futura-Bold/Futura-Bold.woff") format("woff"),
+	url("../fonts/Futura-Bold/Futura-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
