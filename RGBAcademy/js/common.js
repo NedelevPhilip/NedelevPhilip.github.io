@@ -15,6 +15,9 @@ window.onresize = function(event) {
 	windowWidth = window.innerWidth;
 };
 
+	windowHeight = window.innerHeight;
+	windowWidth = window.innerWidth;
+
 	
 
 	var roundItem1 = document.getElementById('round-item-1');
