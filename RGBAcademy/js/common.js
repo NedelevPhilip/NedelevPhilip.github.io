@@ -6,13 +6,16 @@ $(".progress-info").height('auto').equalHeights();
 
 
 
+var windowHeight;
+var windowWidth;
+
 //обновлять разрешение екрана и ребилдить скрипт
 window.onresize = function(event) {
+	windowHeight = window.innerHeight;
+	windowWidth = window.innerWidth;
+};
+
 	
-
-
-	var windowHeight = window.innerHeight;
-	var windowWidth = window.innerWidth;
 
 	var roundItem1 = document.getElementById('round-item-1');
 	var roundItem2 = document.getElementById('round-item-2');
@@ -47,7 +50,7 @@ window.onresize = function(event) {
 
 	function aninate(elem, text){
 		var elemElements = elem.getElementsByTagName('*');
-		
+
 		if(opened){
 			text.style.transform = "scale(0, 0)";
 			setTimeout(function() { decreaseItem(elem, text) }, 300);
@@ -96,4 +99,3 @@ function decreaseItem(elem, text){
 	elemElements[0].style.transform = "scale(1, 1)";
 }
 
-};
