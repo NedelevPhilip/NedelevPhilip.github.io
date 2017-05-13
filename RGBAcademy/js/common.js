@@ -6,81 +6,70 @@ $(".progress-info").height('auto').equalHeights();
 
 
 
-var windowHeight;
-var windowWidth;
+var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
 
-//обновлять разрешение екрана и ребилдить скрипт
-window.onresize = function(event) {
+window.onresize = function(event){
 	windowHeight = window.innerHeight;
 	windowWidth = window.innerWidth;
-};
+}
 
-	windowHeight = window.innerHeight;
-	windowWidth = window.innerWidth;
 
+var roundItem1 = document.getElementById('round-item-1');
+var roundItem2 = document.getElementById('round-item-2');
+var roundItem3 = document.getElementById('round-item-3');
+var textItem1 = document.getElementById('item1');
+var textItem2 = document.getElementById('item2');
+var textItem3 = document.getElementById('item3');
+
+roundItem1.onclick = function(event) {
+	aninate(roundItem1, textItem1);
+}
+roundItem2.onclick = function(event) {
+	aninate(roundItem2, textItem2);
+}
+roundItem3.onclick = function(event) {
+	aninate(roundItem3, textItem3);
+}
+textItem1.onclick = function(event) {
+	aninate(roundItem1, textItem1);
+}
+textItem2.onclick = function(event) {
+	aninate(roundItem2, textItem2);
+}
+textItem3.onclick = function(event) {
+	aninate(roundItem3, textItem3);
+}
+
+
+var opened = false;
+
+function aninate(elem, text){
+	var elemElements = elem.getElementsByTagName('*');
 	
-
-	var roundItem1 = document.getElementById('round-item-1');
-	var roundItem2 = document.getElementById('round-item-2');
-	var roundItem3 = document.getElementById('round-item-3');
-	var textItem1 = document.getElementById('item1');
-	var textItem2 = document.getElementById('item2');
-	var textItem3 = document.getElementById('item3');
-
-	roundItem1.onclick = function(event) {
-		aninate(roundItem1, textItem1);
+	if(opened){
+		scale(text, 0);
+		setTimeout(function() { decreaseItem(elem) }, 700);
+		setTimeout(function() { scale(elemElements[0], 1) }, 1000);
+		opened = false;
+	} else {
+		scale(elemElements[0], 0);
+		setTimeout(function() { increaseItem(elem, text) }, 350);
+		setTimeout(function() { showText(elem, text) }, 350);
+		opened = true;
 	}
-	roundItem2.onclick = function(event) {
-		aninate(roundItem2, textItem2);
-	}
-	roundItem3.onclick = function(event) {
-		aninate(roundItem3, textItem3);
-	}
-	textItem1.onclick = function(event) {
-		aninate(roundItem1, textItem1);
-	}
-	textItem2.onclick = function(event) {
-		aninate(roundItem2, textItem2);
-	}
-	textItem3.onclick = function(event) {
-		aninate(roundItem3, textItem3);
-	}
+}
 
-
-
-	var opened = false;
-
-
-	function aninate(elem, text){
-		var elemElements = elem.getElementsByTagName('*');
-
-		if(opened){
-			text.style.transform = "scale(0, 0)";
-			setTimeout(function() { decreaseItem(elem, text) }, 300);
-			opened = false;
-		} else {
-			increaseItem(elem, text);
-			setTimeout(function() { showText(elem, text) }, 300);
-			opened = true;
-		}
-	}
-
-//-ms-transform: scale(2, 3); /* IE 9 */
-//-webkit-transform: scale(2, 3); /* Safari */
-//transform: scale(2, 3);
 
 function increaseItem(elem, text){
 	var elemElements = elem.getElementsByTagName('*');
-
-	elemElements[0].style.display = "none";
-	elemElements[0].style.transform = "scale(0, 0)";
 
 	var coords = elem.getBoundingClientRect();
 	elem.style.zIndex = "50";
 	elem.style.position = "fixed";
 	elem.style.left = coords.left + "px";
 	elem.style.top = coords.top + "px";
-	elem.style.transform = "scale(20, 20)";
+	scale(elem, 20);
 }
 
 function showText(elem, text){
@@ -89,16 +78,19 @@ function showText(elem, text){
 	var textHeight = parseInt(textStyle.height.substr(0, textStyle.height.length - 2));
 	text.style.left = windowWidth / 2 - textWidth / 2 + "px";
 	text.style.top = windowHeight / 2 - textHeight / 2 + "px";
-	text.style.transform = "scale(1, 1)";
+	scale(text, 1);
 }
 
-function decreaseItem(elem, text){
+function decreaseItem(elem){
 	var elemElements = elem.getElementsByTagName('*');
-
-	elem.style.transform = "scale(1, 1)";
+	scale(elem, 1);
 	elem.style.position = "";
 	elem.style.zIndex = "";
-	elemElements[0].style.display = "";
-	elemElements[0].style.transform = "scale(1, 1)";
 }
 
+
+function scale(elem, s){
+	elem.style.MsTransform = "scale(" + s + ", " + s + ")";
+	elem.style.WebkitTransform = "scale(" + s + ", " + s + ")";
+	elem.style.transform = "scale(" + s + ", " + s + ")";
+}

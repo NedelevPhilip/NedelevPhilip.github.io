@@ -113,6 +113,7 @@ header{
 	text-align: center;
 	vertical-align: middle;
 	transition: all .3s ease;
+	z-index: 30;
 }
 .round-item:hover{
 	cursor: pointer;
@@ -133,8 +134,6 @@ header{
 .animate-item{
 	width: 300px;
 	position: fixed;
-	/*left: 50%;
-	transform: translateX(-50%);*/
 	transition: all .5s ease;
 	color: #fff;
 	text-align: center;
