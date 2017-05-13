@@ -1,13 +1,18 @@
 if ($(window).width() > 768) {
 	$(".content-wrap").height('auto').equalHeights();
 }
-
 $(".progress-info").height('auto').equalHeights();
+
+
+
+
+
 
 
 
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
+
 
 window.onresize = function(event){
 	windowHeight = window.innerHeight;
