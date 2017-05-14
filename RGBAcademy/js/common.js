@@ -59,16 +59,14 @@ function aninate(elem, text){
 		opened = false;
 	} else {
 		scale(elemElements[0], 0);
-		setTimeout(function() { increaseItem(elem, text) }, 350);
+		setTimeout(function() { increaseItem(elem) }, 350);
 		setTimeout(function() { showText(elem, text) }, 350);
 		opened = true;
 	}
 }
 
 
-function increaseItem(elem, text){
-	var elemElements = elem.getElementsByTagName('*');
-
+function increaseItem(elem){
 	var coords = elem.getBoundingClientRect();
 	elem.style.zIndex = "50";
 	elem.style.position = "fixed";
@@ -89,7 +87,9 @@ function showText(elem, text){
 function decreaseItem(elem){
 	var elemElements = elem.getElementsByTagName('*');
 	scale(elem, 1);
-	elem.style.position = "";
+	elem.style.position = "relative";
+	elem.style.left = "";
+	elem.style.top = "";
 	elem.style.zIndex = "30";
 }
 
