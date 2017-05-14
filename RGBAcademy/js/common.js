@@ -90,7 +90,7 @@ function decreaseItem(elem){
 	var elemElements = elem.getElementsByTagName('*');
 	scale(elem, 1);
 	elem.style.position = "";
-	elem.style.zIndex = "";
+	elem.style.zIndex = "30";
 }
 
 
