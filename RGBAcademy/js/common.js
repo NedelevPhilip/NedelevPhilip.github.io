@@ -87,9 +87,11 @@ function showText(elem, text){
 function decreaseItem(elem){
 	var elemElements = elem.getElementsByTagName('*');
 	scale(elem, 1);
+	/*
 	elem.style.position = "relative";
 	elem.style.left = "";
 	elem.style.top = "";
+	*/
 	elem.style.zIndex = "30";
 }
 
