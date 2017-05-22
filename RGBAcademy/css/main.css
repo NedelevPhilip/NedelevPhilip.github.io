@@ -39,22 +39,26 @@ header{
 .form-wrap form{
 	position: absolute;
 	right: 0;
-	width: 400px;
+	width: 370px;
 	height: 45px;
 	text-align: right;
 	border-radius: 100px;
   	border: solid 2px #efefef;
-  	padding: 2px 4px;
+  	padding: 2px 2px;
   	display: block;
 }
 
 .mch-input{
-	width: 185px;
+	width: 160px;
 	height: 25px;
 	border: none;
 	font-family: Roboto, sans-serif;
-  	font-size: 18px;
+  	font-size: 16px;
   	color: #090909;
+  	position: absolute;
+  	left: 22px;
+  	top: 7px;
+
 }
 
 .mch-button{
@@ -64,9 +68,12 @@ header{
 	border-radius: 100px;
 	background: linear-gradient(100deg, rgba(255, 153, 68, 1), rgba(252, 96, 118, 1));
 	font-family: Roboto, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	color: #ffffff;
+	position: absolute;
+  	left: 185px;
+  	top: 2px;
 }	
 .mch-button:hover{
 	background: linear-gradient(100deg, rgba(253, 141, 48, 1), rgba(254, 65, 91, 1));
@@ -112,7 +119,7 @@ header{
 	border-radius: 10em;
 	text-align: center;
 	vertical-align: middle;
-	transition: all .3s ease;
+	transition: all .2s ease;
 	z-index: 30;
 }
 .round-item:hover{
@@ -129,39 +136,34 @@ header{
 	color: #ffffff;
 	margin: 38px 0 0 0;
 	transition: all .5s ease;
+
 }
 
 .animate-item{
-	width: 300px;
+	width: 600px;
 	position: fixed;
-	transition: all .5s ease;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari */
+    transform: translate(-50%, -50%);
+	transition: all .3s ease;
 	color: #fff;
 	text-align: center;
-	z-index: 100;
-}
-.animate-item h2 {
-	
 }
 
-
-
-#item1{
-	transform: scale(0, 0);
-}
-#item2{
-	transform: scale(0, 0);
-}
-#item3{
-	transform: scale(0, 0);
+.overlay-icon{
+	height: 150px;
+	width: 150px;
 }
 
 
 /*SECTION 2*/
 .section2{
-	padding: 65px 0;
+	padding: 90px 0;
 }
 .s2-item{
-	text-align: center;
+/*	text-align: center;*/
 }
 .item-icon-wrap{
 	width: 155px;
@@ -169,7 +171,7 @@ header{
 	margin: auto;
 }
 .section2 .content-wrap{
-	margin: 45px auto;
+	margin: 45px auto 90px auto;
 	padding: 30px 35px 45px;
 	border-radius: 8px;
 	background-color: #ffffff;
@@ -177,9 +179,9 @@ header{
 	
 }
 .section2 .content-wrap h3{
-	margin: 0 auto 30px;
+	margin: 10px auto 30px;
 	font-family: Roboto, sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 500;
 	line-height: 1.17;
 	color: #212b35;
@@ -189,13 +191,13 @@ header{
 	margin: 0;
 	opacity: 0.67;
 	font-family: Roboto, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.22;
 	color: #090909;
 }
 .progress-info{
 	font-family: Roboto, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.22;
 	text-align: center;
 	color: #484848;
@@ -213,7 +215,7 @@ header{
 
 
 .progress-wrap{
-	margin-top: 60px;
+	margin-top: 45px;
 	text-align: center;
 	position: relative;
 }
@@ -262,6 +264,13 @@ footer{
 	padding: 40px 0;
 	background-image: linear-gradient(257deg, #fc6076, #ff9944);
 }
+
+/*
+.email {
+    
+    padding-top:10px;
+}
+*/
 .email-wrap a{
 	font-family: Futura, sans-serif;
 	font-size: 24px;
@@ -293,6 +302,113 @@ footer{
 }
 .social-cont .social-icon{
 	font-size: 32px;
-	color: #fff;
+	color: #FFFFFF;
 	margin: 0 0 0 19px;
+	transition: all .3s ease;
+}
+
+
+
+.fa-medium:hover {
+    color:#32fc8d;
+}
+
+.fa-facebook-official:hover {
+    color:#012ff5;
+}
+
+.fa-instagram:hover {
+    color:#b302cd;
+}
+
+
+
+.overlay-features {
+    text-align: left;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.22;
+}
+
+.under-ru-header {
+    font-weight: 100;
+    
+        	text-align: left;
+
+}
+
+.below-en-header {
+    font-family: Roboto, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 38px 0 0 0;
+	transition: all .5s ease;
+}
+
+.programs-icon {
+    padding: 20px 0px 0px;
+}
+
+
+
+
+
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, rgba(96, 111, 199, .7), rgba(88, 101, 193, .7));
+	z-index: 100;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Effects */
+
+.bodyContainer {
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.bodyContainer.overlay-open {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 }

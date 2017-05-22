@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8" />
 
-	<title>RGB Academy</title>
+	<title>RGB.academy — курсы для дизайнеров</title>
 	<meta content="" name="description" />
 	<meta content="" property="og:image" />
 	<meta content="" property="og:description" />
@@ -20,7 +20,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/manifest.json">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#fc6076">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
@@ -28,195 +35,230 @@
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-	<!--<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">-->
+
+	<link rel="stylesheet" type="text/css" href="libs/fullscreenOverlay/normalize.css" />
+	<!--<link rel="stylesheet" type="text/css" href="libs/fullscreenOverlay/demo.css" />-->
+	
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="logo-wrap">
-						<div class="logo">
-							<!--<img class="img" src="img/logo@3x.png" alt="RGB Academy logo">-->
-							<svg class="svg" xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<linearGradient id="a" x1="67.051%" x2="32.74%" y1="0%" y2="100%">
-										<stop offset="0%" stop-color="#F94"/>
-										<stop offset="100%" stop-color="#FC6076"/>
-									</linearGradient>
-								</defs>
-								<g fill="none" fill-rule="evenodd" transform="translate(-2 -9)">
-									<text fill="#000" font-family="Futura-Bold, Futura" font-size="36" font-weight="bold">
-										<tspan x="0" y="37">RGB</tspan>
-									</text>
-									<text fill="#000" font-family="Futura-Bold, Futura" font-size="24" font-weight="bold">
-										<tspan x="101" y="31">academy</tspan>
-									</text>
-									<circle cx="91" cy="25" r="4" fill="url(#a)"/>
-								</g>
-							</svg>
+	<div class="bodyContainer">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="logo-wrap">
+
+							<div class="logo">
+								<!--<img class="img" src="img/logo@3x.png" alt="RGB Academy logo">-->
+								<svg class="svg" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient id="a" x1="67.051%" x2="32.74%" y1="0%" y2="100%">
+											<stop offset="0%" stop-color="#F94"/>
+											<stop offset="100%" stop-color="#FC6076"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd" transform="translate(-2 -9)">
+										<text fill="#000" font-family="Futura-Bold, Futura" font-size="36" font-weight="bold">
+											<tspan x="0" y="37">RGB</tspan>
+										</text>
+										<text fill="#000" font-family="Futura-Bold, Futura" font-size="24" font-weight="bold">
+											<tspan x="98" y="31">academy</tspan>
+										</text>
+										<circle cx="85" cy="25" r="4" fill="url(#a)"/>
+									</g>
+								</svg>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-wrap">
+							<form action="//academy.us15.list-manage.com/subscribe/post?u=84f1fba31aac7012df49d3dda&amp;id=410e100cae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<input type="email" value="" name="EMAIL" class="email mch-input" id="mce-EMAIL" placeholder="Введите ваш email" required>
+								<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="mch-button">Подписаться <img src="img/emojii.png" class="btn-img" alt="Подписаться"></button>
+							</form>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<div class="form-wrap">
-						<form action="//academy.us15.list-manage.com/subscribe/post?u=84f1fba31aac7012df49d3dda&amp;id=410e100cae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<input type="email" value="" name="EMAIL" class="email mch-input" id="mce-EMAIL" placeholder="Введите ваш email" required>
-							<!--<input type="submit" value="Подписаться" name="subscribe" id="mc-embedded-subscribe" class="mch-button">-->
-							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="mch-button">Подписаться <img src="img/emojii.png" class="btn-img" alt="Подписаться"></button>
-						</form>
-					</div>
-				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<section class="section1">
-		<div class="container">
-			<div class="row">
-				<div class="content-wrap">
-					<div class="col-lg-6 col-md-8 col-lg-offset-3 col-md-offset-2">
-						<h1>Мы создаём интерактивные <span>онлайн-курсы для дизайнеров</span></h1>
+		<section class="section1">
+			<div class="container">
+				<div class="row">
+					<div class="content-wrap">
+						<div class="col-lg-6 col-md-8 col-lg-offset-3 col-md-offset-2">
+							<h1>Мы создаём интерактивные <span>онлайн-курсы для дизайнеров</span></h1>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="round-item-wrap">
+										<div id="trigger-overlay1" type="button" class="round-item">
+											<h2>UIX</h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="round-item-wrap"  id="round-item-2">
+										<div id="trigger-overlay2" type="button" class="round-item">
+											<h2>MOT</h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="round-item-wrap">
+										<div id="trigger-overlay3" type="button" class="round-item">
+											<h2>ILL</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</section>
+
+				<section class="section2">
+					<div class="container">
 						<div class="row">
-							<div class="col-sm-4">
-								<div class="round-item-wrap">
-									<div id="round-item-1" class="round-item">
-										<h2>UIX</h2>
+							<div class="col-md-4">
+								<div class="s2-item">
+									<div class="item-icon-wrap">
+										<img src="img/icon.svg" alt="icon" class="img">
+									</div>
+									<div class="content-wrap">
+										<h3>Адаптивная программа</h3>
+										<p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
+									</div>
+									<div class="progress-info hidden-sm hidden-xs">
+										<p>Запуск бета-версии <br>для закрытого <a href="#">сообщества</a></p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-4">
-								<div class="round-item-wrap">
-									<div id="round-item-2" class="round-item">
-										<h2>MOT</h2>
+							<div class="col-md-4">
+								<div class="s2-item">
+									<div class="item-icon-wrap">
+										<img src="img/icon.svg" alt="icon" class="img">
+									</div>
+									<div class="content-wrap">
+										<h3>Интерактивные задания</h3>
+										<p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+										</p>
+									</div>
+									<div class="progress-info hidden-sm hidden-xs">
+										<p>Запуск бета-версии <br>для закрытого <a href="#mce-EMAIL">сообщества</a></p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-4">
-								<div class="round-item-wrap">
-									<div id="round-item-3" class="round-item">
-										<h2>ILL</h2>
+							<div class="col-md-4">
+								<div class="s2-item">
+									<div class="item-icon-wrap">
+										<img src="img/icon.svg" alt="icon" class="img">
+									</div>
+									<div class="content-wrap">
+										<h3>Живое общение</h3>
+										<p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов. 
+										</p>
+									</div>
+									<div class="progress-info hidden-sm hidden-xs">
+										<p>Запуск бета-версии <br>для закрытого <a href="#">сообщества</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="progress-wrap hidden-sm hidden-xs">
+								<progress class="progress" max="100" value="25"></progress>
+								<div class="ready-point1">
+									<img src="img/r1.png" alt="alt" class="img">
+								</div>
+								<div class="not-ready point2">
+									<img src="img/r2.png" alt="alt" class="img">
+								</div>
+								<div class="not-ready point3">
+									<img src="img/r2.png" alt="alt" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-5 col-xs-6 email-xs">
+								<div class="email-wrap">
+									<a href="mailto:hi@rgb.academy">hi@rgb.academy</a>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-7 col-xs-6 social-xs">
+								<div class="social-wrap">
+									<div class="social-cont">
+										<!--							<p class="hidden-xs">Следите за обновлениями</p>-->
+										<a class="social-icon fa fa-medium" href="https://medium.com/rgb-academy" target="_blank" title="Читайте статьи про академию на Medium"></a>
+										<a class="social-icon fa fa-instagram" href="https://www.instagram.com/rgb.academy/"  target="_blank" title="Смотрите фото из-закулисья в Instagram"></a>
+										<a class="social-icon fa fa-facebook-official" href="https://www.facebook.com/RGBacademy-400206730353210/"  target="_blank" title="Следите за обновлениями в Facebook"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div id="item1" class="animate-item">
-						<h2>UIX</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
-					</div>
-					<div id="item2" class="animate-item">
-						<h2>MOT</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
-					</div>
-					<div id="item3" class="animate-item">
-						<h2>ILL</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</section>
+				</footer>
 
-	<section class="section2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="s2-item">
-						<div class="item-icon-wrap">
-							<img src="img/icon.svg" alt="icon" class="img">
-						</div>
-						<div class="content-wrap">
-							<h3>Адаптивная программа</h3>
-							<p>Set up a store for a client, build a theme, or develop an app in a development store.</p>
-						</div>
-						<div class="progress-info hidden-sm hidden-xs">
-							<p>Запуск бета-версии <br>для закрытого <a href="#">сообщества</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="s2-item">
-						<div class="item-icon-wrap">
-							<img src="img/icon.svg" alt="icon" class="img">
-						</div>
-						<div class="content-wrap">
-							<h3>Интерактивные задания</h3>
-							<p>Set up a s
-								Set up a store for a client, build a theme, or develop an app in a development store.
-								Set up a store for a client, build a theme, or develop an app in a development store.tore for a client, build a theme, or develop an app in a development store.Set up a store for a client, build a theme, or develop an app in a development store.
-							</p>
-						</div>
-						<div class="progress-info hidden-sm hidden-xs">
-							<p>Запуск бета-версии <br>для закрытого <a href="#">сообщества</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="s2-item">
-						<div class="item-icon-wrap">
-							<img src="img/icon.svg" alt="icon" class="img">
-						</div>
-						<div class="content-wrap">
-							<h3>Живое общение</h3>
-							<p>Set up a store for a client, build a theme, or develop an app in a development store.
-								Set up a store for a client, build a theme, or develop an app in a development store.
-								Set up a store for a client, build a theme, or develop an app in a development store.
-							</p>
-						</div>
-						<div class="progress-info hidden-sm hidden-xs">
-							<p>Запуск бета-версии <br>для закрытого <a href="#">сообщества</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="progress-wrap hidden-sm hidden-xs">
-					<progress class="progress" max="100" value="25"></progress>
-					<div class="ready-point1">
-						<img src="img/r1.png" alt="alt" class="img">
-					</div>
-					<div class="not-ready point2">
-						<img src="img/r2.png" alt="alt" class="img">
-					</div>
-					<div class="not-ready point3">
-						<img src="img/r2.png" alt="alt" class="img">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-5 col-xs-6 email-xs">
-					<div class="email-wrap">
-						<a href="mailto:hi@rgb.academy">hi@rgb.academy</a>
+			</div>
+
+
+			<!-- open/close -->
+			<div class="overlay overlay1 overlay-contentscale">
+				<button type="button" class="overlay-close">Close</button>
+				<div id="item1" class="animate-item">
+					<h2 class="below-en-header">UIX</h2>
+					<div class="programs-icon"> 
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
 					</div>
-				</div>
-				<div class="col-md-6 col-sm-7 col-xs-6 social-xs">
-					<div class="social-wrap">
-						<div class="social-cont">
-							<p class="hidden-xs">Следите за обновлениями</p>
-							<a class="social-icon fa fa-medium" href="#"></a>
-							<a class="social-icon fa fa-instagram" href="#"></a>
-							<a class="social-icon fa fa-facebook-official" href="#"></a>
-						</div>
-					</div>
+					<h3 class="under-ru-header">Дизайн пользовательского интерфейса и опыта</h3>
+					<p class="overlay-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
 				</div>
 			</div>
-		</div>
-	</footer>
+			<div class="overlay overlay2 overlay-contentscale">
+				<button type="button" class="overlay-close">Close</button>
+				<div id="item1" class="animate-item">
+					<h2 class="below-en-header">MOT</h2>
+					<div class="programs-icon"> 
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
+					</div>
+					<h3 class="under-ru-header">Дизайн пользовательского интерфейса и опыта</h3>
+					<p class="overlay-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
+				</div>
+			</div>
+			<div class="overlay overlay3 overlay-contentscale">
+				<button type="button" class="overlay-close">Close</button>
+				<div id="item1" class="animate-item">
+					<h2 class="below-en-header">ILL</h2>
+					<div class="programs-icon"> 
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
+						<img src="img/sketch-logo.png" class="overlay-icon">
+					</div>
+					<h3 class="under-ru-header">Дизайн пользовательского интерфейса и опыта</h3>
+					<p class="overlay-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio laudantium, neque non, itaque labore consectetur voluptate, iusto velit laborum animi, libero rem! Fugiat dolores praesentium, enim voluptatem quos necessitatibus?</p>
+				</div>
+			</div>
 
-	<div class="hidden"></div>
-	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
-	<div class="device-xs visible-xs"></div>
-	<div class="device-sm visible-sm"></div>
-	<div class="device-md visible-md"></div>
-	<div class="device-lg visible-lg"></div>
-	<!-- end mandatory -->
+
+
+			<div class="hidden"></div>
+			<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
+			<div class="device-xs visible-xs"></div>
+			<div class="device-sm visible-sm"></div>
+			<div class="device-md visible-md"></div>
+			<div class="device-lg visible-lg"></div>
+
+			<!-- end mandatory -->
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -228,6 +270,10 @@
 	<script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
+	<script src="libs/fullscreenOverlay/modernizr.custom.js"></script>
+	<script src="libs/fullscreenOverlay/classie.js"></script>
+	<script src="libs/fullscreenOverlay/demo7.js"></script>
+	<script src="libs/fullscreenOverlay/demo7.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

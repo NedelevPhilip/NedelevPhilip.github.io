@@ -10,6 +10,9 @@ $(".progress-info").height('auto').equalHeights();
 
 
 
+
+
+/*
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
@@ -55,7 +58,7 @@ function aninate(elem, text){
 	if(opened){
 		scale(text, 0);
 		setTimeout(function() { decreaseItem(elem) }, 700);
-		setTimeout(function() { scale(elemElements[0], 1) }, 1000);
+		setTimeout(function() { scale(elemElements[0], 1) }, 800);
 		opened = false;
 	} else {
 		scale(elemElements[0], 0);
@@ -87,9 +90,7 @@ function showText(elem, text){
 function decreaseItem(elem){
 	scale(elem, 1);
 	setTimeout(function() { 
-	elem.style.position = "relative";
-	elem.style.left = "";
-	elem.style.top = "";
+	elem.style.position = "";
 	elem.style.zIndex = "30";
 	}, 1000);
 }
@@ -100,3 +101,4 @@ function scale(elem, s){
 	elem.style.WebkitTransform = "scale(" + s + ", " + s + ")";
 	elem.style.transform = "scale(" + s + ", " + s + ")";
 }
+*/

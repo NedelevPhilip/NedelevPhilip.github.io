@@ -9,10 +9,10 @@
 		left: 170px;
 	}
 	.point2 {
-    	left: 470px;
+		left: 470px;
 	}
 	.point3 {
-    	right: 155px;
+		right: 155px;
 	}
 
 }
@@ -57,6 +57,14 @@
 	}
 
 
+	.animate-item{
+		width: 450px;
+	}
+
+	.overlay-icon{
+		height: 120px;
+		width: 120px;
+	}
 	
 
 }
@@ -94,10 +102,6 @@
 		padding: 25px 25px 25px;
 	}
 
-
-
-
-
 	.email-xs, .social-xs{
 		width: 100%;
 	}
@@ -107,6 +111,18 @@
 	.social-cont{
 		text-align: center;
 		margin-top: 20px;
+	}
+
+	.animate-item{
+		width: 300px;
+	}
+	.animate-item p {
+		font-size: 12px;
+	}
+
+	.overlay-icon{
+		height: 80px;
+		width: 80px;
 	}
 }
 
