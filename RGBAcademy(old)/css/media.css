@@ -19,38 +19,17 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.message-wrap{
-		height: 240px;
-	}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	header{
-		height: 470px;
-		background-image: url(../img/head-bgi.jpg);
-		-webkit-background-size: cover;
-		background-size: cover;
-		background-position: center, center;
+		height: 180px;
 	}
-
-	#head-video{
-		display: none;
-	}
-
-
 	.logo{
 		margin: 0 auto 20px;
 	}
-
-	.social-cont{
-		text-align: center;
-	}
-
-	.social-cont a:first-child{
-		margin-left: 0;
-	}
-
 	.form-wrap{
 		position: relative;
 	}
@@ -59,50 +38,41 @@
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
-	
-	.header-title{
-		height: 210px;
+
+
+	.section1{
+		height: 640px;
 	}
-
-	.header-title h1{
-		width: 450px;
-		font-size: 34px;
-	}
-
-	.header-title h1 span{
-		font-size: 28px;
-	}
-
-
-	.message-wrap{
-		height: 370px;
-		padding: 30px 60px 30px;
+	.section1 h1{
 		margin: 0;
 	}
-
-	.message-buttons{
-		text-align: center;
+	.round-item{
+		margin-top: 35px;
 	}
+	.round-item:hover{
+		width: 112px;
+		height: 112px;
+		margin-top: 35px;
+		padding-top: 0;
+	}
+
+
+	.animate-item{
+		width: 450px;
+	}
+
+	.overlay-icon{
+		height: 120px;
+		width: 120px;
+	}
+	
 
 }
-
-@media only screen and (max-width : 580px) {
-	.message-wrap{
-		height: 470px;
-	}
-
-	.message-buttons a{
-		display: block;
-		margin: 22px auto;
-		width: 350px;
-	}
-}
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	header{
-		height: 500px;
+		height: 250px;
 	}
 	.form-wrap form{
 		width: 300px;
@@ -118,40 +88,16 @@
 		left: 0;
 		width: 300px;
 		height: 45px;
-		border-radius: 8px;
-		margin-top: 10px;
-	}
-
-	.message-wrap{
-		height: 500px;
-		padding: 30px 25px;
-	}
-	.message-buttons a{
-		width: 230px;
-	}
-	.message-text h3{
-		text-align: center;
-	}
-	.email-btn{
-		margin: 15px 0 0 0;
-	}
-
-
-	.header-title{
-		padding-top: 55px;
-		height: 185px;
-	}
-
-	.header-title h1{
-		width: 310px;
-		font-size: 25px;
-	}
-
-	.header-title h1 span{
-		font-size: 22px;
 	}
 
 	
+	.section1{
+		padding-top: 20px;
+		height: 680px;
+	}
+	.section1 h1{
+		font-size: 30px;
+	}
 	.content-wrap{
 		padding: 25px 25px 25px;
 	}
@@ -167,6 +113,17 @@
 		margin-top: 20px;
 	}
 
+	.animate-item{
+		width: 300px;
+	}
+	.animate-item p {
+		font-size: 12px;
+	}
+
+	.overlay-icon{
+		height: 80px;
+		width: 80px;
+	}
 }
 
 /* Custom, iPhone Retina */
