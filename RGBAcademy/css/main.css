@@ -21,7 +21,7 @@ body {
 header{
 	position: relative;
 	padding-top: 29px;
-	height: 430px;
+	height: 500px;
 }
 
 .head-content{
@@ -66,8 +66,8 @@ header{
 }
 
 .header-title{
-	padding-top: 65px;
-	height: 230px;
+	padding-top: 45px;
+	height: 250px;
 	position: relative;
 }
 .header-title h1{
@@ -78,7 +78,7 @@ header{
 	font-family: Futura, sans-serif;
 	font-weight: 500;
 	font-size: 47px;
-	line-height: 1.1;
+	line-height: 44px;
 }
 
 .header-title h1 span{
@@ -87,6 +87,15 @@ header{
 	font-size: 41px;
 }
 
+.header-title p{
+	width: 400px;
+	font-size: 16px;
+	line-height: 19px;
+	opacity: .7;
+	color: #fff;
+	margin: 40px auto 0;
+	text-align: center;
+}
 
 .form-wrap{
 	position: relative;
@@ -97,7 +106,7 @@ header{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	width: 450px;
+	width: 470px;
 	height: 52px;
 	border-radius: 8px;
   	display: block;
@@ -106,21 +115,21 @@ header{
 }
 
 .mch-input{
-	width: 230px;
+	width: 250px;
 	height: 40px;
 	border: none;
 	font-family: Roboto, sans-serif;
   	font-size: 18px;
   	color: #fff;
   	position: absolute;
-  	left: 22px;
+  	left: 15px;
   	top: 6px;
 	background-color: transparent;
 
 }
 
 .mch-button{
-	width: 185px;
+	width: 195px;
 	height: 100%;
 	border: none;
 	border-radius: 0 8px 8px 0;
@@ -144,9 +153,12 @@ header{
 }
 
 .section2{
-	padding: 60px 0;
+	padding: 0 0;
 }
 
+.s2-item{
+	margin-top: -40px;
+}
 .item-icon-wrap{
 	width: 100px;
 	height: 64px;
@@ -219,6 +231,13 @@ header{
 	border-radius: 100px;
 	background-image: linear-gradient(96deg, #29a5ff, #0074ca);
 }
+
+.youtube{
+	display: block;
+	width: 890px;
+	height: 500px;
+	margin: 56px auto 0;
+}
 .ready-point1{
 	width: 12px;
 	height: 12px;
@@ -275,7 +294,7 @@ header{
 }
 
 .message-wrap{
-	margin-top: 80px;
+	margin-top: -25px;
 	width: 100%;
 	height: 220px;
 	border: solid 1px #60aee3;
