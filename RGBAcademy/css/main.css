@@ -21,7 +21,7 @@ body {
 header{
 	position: relative;
 	padding-top: 29px;
-	height: 500px;
+	height: 480px;
 }
 
 .head-content{
@@ -95,6 +95,13 @@ header{
 	color: #fff;
 	margin: 40px auto 0;
 	text-align: center;
+	position: relative;
+}
+
+.header-arrow{
+	position: absolute;
+	right: 38px;
+	top: 27px;
 }
 
 .form-wrap{

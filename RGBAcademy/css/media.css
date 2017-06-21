@@ -19,6 +19,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.s2-item{
+		margin-top: 0;
+	}
+
 	.message-wrap{
 		height: 240px;
 	}
