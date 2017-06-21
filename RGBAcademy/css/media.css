@@ -23,15 +23,24 @@
 		margin-top: 0;
 	}
 
+	.section2 .content-wrap {
+		margin: 60px auto 0;
+	}
+
 	.message-wrap{
 		height: 240px;
+	}
+
+	.youtube{
+		width: 720px;
+		height: 400px;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	header{
-		height: 470px;
+		height: 500px;
 		background-image: url(../img/head-bgi.jpg);
 		-webkit-background-size: cover;
 		background-size: cover;
@@ -65,7 +74,7 @@
 	}
 	
 	.header-title{
-		height: 210px;
+		height: 245px;
 	}
 
 	.header-title h1{
@@ -86,6 +95,11 @@
 
 	.message-buttons{
 		text-align: center;
+	}
+
+	.youtube{
+		width: 530px;
+		height: 300px;
 	}
 
 }
@@ -149,12 +163,16 @@
 	.header-title h1{
 		width: 310px;
 		font-size: 25px;
+		line-height: 30px;
 	}
 
 	.header-title h1 span{
 		font-size: 22px;
 	}
-
+	
+	.header-title p, .header-arrow{
+		display: none;
+	}
 	
 	.content-wrap{
 		padding: 25px 25px 25px;
