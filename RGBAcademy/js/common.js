@@ -11,5 +11,9 @@ $('a[href=#top]').click(function(){
 });
 
 
+window.onresize = function(){
+	var w = $(".youtube").width();
+	$(".youtube").height(w * 0.56);
+}
 
 

@@ -250,7 +250,7 @@ header{
 	height: 12px;
 	position: absolute;
 	left: 195px;
-	top: -38px;
+	top: -34px;
 }
 .not-ready{
 	width: 26px;
@@ -259,11 +259,11 @@ header{
 }
 .point2{
 	left: 566px;
-	top: -38px;
+	top: -34px;
 }
 .point3{
 	right: 184px;
-	top: -38px;
+	top: -34px;
 }
 
 
@@ -280,15 +280,15 @@ header{
 }
 
 
-.fa-medium:hover {
+.fa-medium:hover, footer .social-cont .fa-medium:hover {
     color:#32fc8d;
 }
 
-.fa-facebook-official:hover {
+.fa-facebook-official:hover, footer .social-cont .fa-facebook-official:hover{
     color:#012ff5;
 }
 
-.fa-instagram:hover {
+.fa-instagram:hover, footer .social-cont .fa-instagram:hover{
     color:#b302cd;
 }
 
@@ -303,11 +303,11 @@ header{
 .message-wrap{
 	margin: 55px auto 85px;
 	width: 100%;
-	height: 220px;
-	border: solid 1px #60aee3;
-	border-radius: 53px 53px 53px 0;
-	background-color: #eaf4fb;
-	padding: 40px 40px 0 0;
+	height: 200px;
+	border-radius: 50px 50px 50px 0;
+	background-color: #fff;
+	padding: 30px 40px 0 0;
+	box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.07);
 }
 
 .photo{
@@ -315,7 +315,6 @@ header{
 	height: 110px;
 	margin: 0 auto 20px;
 	border-radius: 53px;
-  	border: solid 1px #60aee3;
   	background-image: url(../img/photo.jpg);
   	-webkit-background-size: cover;
   	background-size: cover;
@@ -350,20 +349,10 @@ header{
 	transition: ease all .3s;
 }
 
-.video-btn{
-	width: 170px;
-	color: #ffffff;
-	background: linear-gradient(to right, #0091fd, #007bd7);
-}
-.video-btn:hover{
-	background: linear-gradient(to right, rgba(0, 132, 231, 1), rgba(2, 115, 200, 1));
-}
-
 .email-btn{
 	width: 234px;
-	margin-left: 20px;
-	background-color: #fff;
-	color: #000;
+	background-color: #000;
+	color: #fff;
 }
 .email-btn:hover{
 	background-color: #efefef;
@@ -376,5 +365,27 @@ footer{
 
 footer .social-cont .social-icon{
 	color: #000;
-	margin: 25px 19px 0 0;
+	margin: 25px 0 0 19px;
+}
+
+
+.language-link{
+	height: 100%;
+}
+.language-link a{
+	display: inline-block;
+	width: 140px;
+	height: 37px;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.38;
+	color: #090909;
+	margin: 25px 0 0 0;
+	text-align: center;
+	padding-top: 7px;
+}
+.language-link .active{
+	border-radius: 100px;
+	background-color: #f2f2f2;
 }
