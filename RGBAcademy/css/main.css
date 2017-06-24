@@ -105,11 +105,8 @@ header{
 
 .header-arrow{
 	position: absolute;
-	right: 38px;
-	top: 27px;
-	display: inline;
-	padding: 0;
-	margin: 0;
+	right: 2.5em;
+	top: 1.7em;
 }
 
 .form-wrap{
