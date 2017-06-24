@@ -89,7 +89,7 @@ header{
 
 
 .header-title .header-text{
-	width: 400px;
+	width: 390px;
 	margin: 40px auto 0;
 	position: relative;
 }
@@ -108,8 +108,8 @@ header{
 	height: 22px;
 	opacity: .7;
 	position: absolute;
-	right: 2.5em;
-	top: 1.7em;
+	right: 20px;
+	top: 27px;
 }
 
 .form-wrap{
