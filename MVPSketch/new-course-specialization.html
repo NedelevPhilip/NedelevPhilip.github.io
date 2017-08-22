@@ -5,11 +5,17 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />  
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
 
     </head>
     <body data-smooth-scroll-offset="77">
@@ -61,15 +67,45 @@
                     </div>
                 </div>
             </section>
+            
+            <section class="text-center space--xxs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="process-stepper clearfix" data-process-steps="3">
+                                <li class="active"> <span>Open</span> </li>
+                                <li class="active"> <span>Bug Confirmed</span> </li>
+                                <li> <span>Fix Ready</span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="text-center space--xxs">
                 <div class="container">
                      <div class="row">
-                        <div class="col-md-8">
-                            <div class="progress-horizontal">
-                                 <div class="progress-horizontal__bar" data-value="66"></div>
+                        <div class="col-md-7">
+                           <!-- STYLE -->
+                            <div class="dropdown" style="float: left">
+                                <span class="dropdown__trigger">Menu Dropdown</span>
+                                <div class="dropdown__container">
+                                            <div class="dropdown__content">
+                                                <ul class="menu-vertical">
+                                                    <li>
+                                                        end row
+                                                    </li>
+                                                    <li>
+                                                        end container
+                                                    </li>
+                                                    <li>
+                                                        end dropdown container
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                </div><!--end dropdown container-->
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="input-radio input-radio--innerlabel">
 	                            <input id="radio-1" type="radio" name="radio" value="radio1" />
 	                            <label for="radio-1">Популярное</label>
@@ -80,65 +116,66 @@
                             </div>
 <!--Added style-->
                             <div class="input-icon" style="float:right; width: 48%">
-	         <!--                  <i class="material-icons">person</i>-->
+	                            <i class="material-icons">search</i>
 	                           <input type="text" name="input" placeholder="Введите профессию" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="switchable feature-large space--xs switchable--switch">
+            
+            
+           
+           
+           
+           <section class="bg--secondary">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-md-8">
-<!--Added style-->
-                            <div class="switchable__text" style="float:left; width: 48%">
-                                <h2>Perfect for bootstrapp</h2>
-                                <p class="lead"> Launching an attractive and scalable website quickly and affordably is important for modern stagain-bin'. </p> <a href="#">Learn More »</a> 
+                         <div class="col-md-6">
+                               <div class="imagebg boxed boxed--lg" data-scrim-top="8">
+                                <div class="background-image-holder" style="background: url(&quot;img/blog-3.jpg&quot;); opacity: 1;">
+                                    <img alt="background" src="img/blog-3.jpg">
+                                </div>
+                                <div class="container">
+                                    <h5>Modern Aesthetic</h5>
+                                    <p>
+                                        Build a beautifully performant site with Stack's vast collection of modular elements.
+                                    </p>
+                                    <a class="btn btn--primary" href="#">
+                                        <span class="btn__text">
+                                            Build Now
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="boxed boxed--border  bg--secondary boxed--lg box-shadow">
-	                            <h5>В курсе:</h5>
-                                <ul>
-                                    <li>dvdgbfghnghngh</li>
-                                    <li>dvdgbfghnghngh</li>
-                                    <li>dvdgbfghnghngh</li>
-                                </ul>
-                                <a class="btn btn--primary" href="new-course-specialization-academy.html">
-                                    <span class="btn__text">
-                                        Build Now
-                                    </span>
-                                </a>
+                           </div>
+                            
+                        <div class="col-sm-6">
+                            <div class="imagebg boxed boxed--lg" data-scrim-top="8">
+                                <div class="background-image-holder" style="background: url(&quot;img/blog-3.jpg&quot;); opacity: 1;">
+                                    <img alt="background" src="img/blog-4.jpg">
+                                </div>
+                                <div class="container">
+                                    <h5>Modern Aesthetic</h5>
+                                    <p>
+                                        Build a beautifully performant site with Stack's vast collection of modular elements.
+                                    </p>
+                                    <a class="btn btn--primary" href="#">
+                                        <span class="btn__text">
+                                            Build Now
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
+                           </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="switchable feature-large space--xs switchable--switch">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-8">
-<!--Added style-->
-                            <div class="switchable__text" style="float:left; width: 48%">
-                                <h2>Perfect for bootstrapp</h2>
-                                <p class="lead"> Launching an attractive and scalable website quickly and affordably is important for modern stagain-bin'. </p> <a href="#">Learn More »</a> 
-                            </div>
-                            <div class="boxed boxed--border  bg--secondary boxed--lg box-shadow">
-	                            <h5>В курсе:</h5>
-                                <ul>
-                                    <li>dvdgbfghnghngh</li>
-                                    <li>dvdgbfghnghngh</li>
-                                    <li>dvdgbfghnghngh</li>
-                                </ul>
-                                <a class="btn btn--primary" href="new-course-specialization-academy.html">
-                                    <span class="btn__text">
-                                        Build Now
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
+               
+                          
+                            
             
         </div>
         <div class="main-container">
