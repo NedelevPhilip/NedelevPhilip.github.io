@@ -1,1 +1,10 @@
 /*! Place your custom styles here */
+
+
+.course-header-text {
+    margin-bottom: 30px!important;
+}
+
+.profession-block {
+    height: 300px;
+}
