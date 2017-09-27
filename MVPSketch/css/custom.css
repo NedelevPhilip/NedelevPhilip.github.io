@@ -2,9 +2,30 @@
 
 
 .course-header-text {
-    margin-bottom: 30px!important;
+    margin-bottom: 25px!important;
 }
 
 .profession-block {
     height: 300px;
+}
+
+.course-category li{
+    height: 2.78571429em;
+    opacity: 1!important;
+}
+.course-category span{
+    line-height: 1!important;
+    
+    font-size: 1em!important;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.text-input::-webkit-input-placeholder {color:#666!important; opacity: 1; font-weight: 400; font-size: 1em!important;}
+.text-input::-moz-placeholder {color:#666!important; opacity: 1; font-weight: 400; font-size: 1em!important;}
+.text-input::-moz-placeholder {color:#666!important; opacity: 1; font-weight: 400; font-size: 1em!important;}
+.text-input::-ms-input-placeholder {color:#666!important; opacity: 1; font-weight: 400; font-size: 1em!important;}
+
+.course-card__bottom-child-wrap{
+	width: 100%!important;
 }
