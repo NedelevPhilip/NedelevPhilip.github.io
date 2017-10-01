@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #007540;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.body-container {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #484848; }
+
+.center-container {
+  margin: auto;
+  max-width: 650px;
+  text-align: center;
+  padding: 0 20px; }
+
+.row-block {
+  display: table-row;
+  width: 100%; }
+
+.left-part {
+  background-color: #cfcfcf;
+  width: 140px;
+  display: table-cell;
+  vertical-align: top; }
+
+.right-part {
+  width: 500px;
+  display: table-cell; }
+
+.header-container {
+  background-color: #484848;
+  color: #fff;
+  padding-top: 20px; }
+  .header-container p {
+    float: right;
+    width: 260px;
+    text-align: right;
+    padding-right: 20px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0; }
+
+.header-logo {
+  display: block;
+  margin-top: 20px; }
+  .header-logo img {
+    width: 100px; }
+
+.header-top {
+  padding: 50px 0 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 34px;
+  clear: both; }
+
+.attention-section {
+  background-color: #ff8a80;
+  border: solid 6px #ff5252;
+  padding: 15px 18px;
+  margin: 50px 0 0 20px; }
+
+.icon {
+  margin-top: 50px;
+  display: inline-block; }
+
+.rows-block {
+  width: 100%;
+  margin: 40px 0 0 20px;
+  display: inline-block; }
+  .rows-block img {
+    width: 100%; }
+
+.line {
+  padding-bottom: 20px;
+  border-bottom: #484848 1px solid; }
+
+.row-wrap {
+  margin-bottom: 15px;
+  text-align: left;
+  padding-right: 10px; }
+  .row-wrap span {
+    color: #000; }
+
+.block-header {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #007540;
+  text-align: left;
+  margin: 10px 0; }
+
+.footer-image {
+  width: 230px;
+  margin: 30px 20px 30px 0;
+  display: inline-block; }
+
+.uppercase-text {
+  text-transform: uppercase;
+  text-align: left; }
+
+.italic-bold-text {
+  font-style: italic;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 40px; }
+
+.bold-text {
+  font-weight: 600;
+  text-align: left; }
+
+.bold-text {
+  font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */
