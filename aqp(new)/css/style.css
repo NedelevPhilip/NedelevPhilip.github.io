@@ -21,8 +21,7 @@ a:hover {
 .center-container {
   margin: auto;
   max-width: 650px;
-  text-align: center;
-  padding: 0 20px; }
+  text-align: center; }
 
 .row-block {
   display: table-row;
@@ -41,12 +40,11 @@ a:hover {
 .header-container {
   background-color: #484848;
   color: #fff;
-  padding-top: 20px; }
+  padding: 20px 20px 0; }
   .header-container p {
     float: right;
-    width: 260px;
+    width: 100%;
     text-align: right;
-    padding-right: 20px;
     letter-spacing: -1px;
     font-size: 14px;
     line-height: 24px;
@@ -58,8 +56,14 @@ a:hover {
   .header-logo img {
     width: 100px; }
 
+.header-logo-hidden {
+  display: none;
+  margin: 20px auto; }
+  .header-logo-hidden img {
+    width: 100px; }
+
 .header-top {
-  padding: 50px 0 50px;
+  padding: 50px 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 29px;
@@ -77,10 +81,13 @@ a:hover {
   margin-top: 50px;
   display: inline-block; }
 
+.icon-hidden {
+  width: 100px;
+  margin: 20px auto;
+  display: none; }
+
 .rows-block {
-  width: 100%;
-  margin: 40px 0 0 20px;
-  display: inline-block; }
+  margin: 40px 20px 0; }
   .rows-block img {
     width: 100%; }
 
@@ -91,7 +98,8 @@ a:hover {
 .row-wrap {
   margin-bottom: 15px;
   text-align: left;
-  padding-right: 10px; }
+  padding-right: 10px;
+  width: 100%; }
   .row-wrap span {
     color: #000; }
 
@@ -105,8 +113,8 @@ a:hover {
   margin: 10px 0; }
 
 .footer-image {
-  width: 230px;
-  margin: 30px 20px 30px 0;
+  width: 100%;
+  margin: 30px 0;
   display: inline-block; }
 
 .uppercase-text {
