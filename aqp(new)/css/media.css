@@ -22,4 +22,12 @@
 	.attention-section{
 		margin: 50px 0
 	}
+	.table-cell-contaiber{
+		font-size: 10px;
+		letter-spacing: -1px;
+		padding: 0;
+	}
+	.table-header{
+		font-weight: 400
+	}
 }

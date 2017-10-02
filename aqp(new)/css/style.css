@@ -134,4 +134,40 @@ a:hover {
 .bold-text {
   font-weight: 700; }
 
+table {
+  width: 100%; }
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse; }
+
+th {
+  background-color: #cfcfcf; }
+
+th,
+td {
+  padding: 5px 10px; }
+
+.table-contaiber {
+  display: table;
+  width: 100%;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000; }
+
+.table-row-contaiber {
+  display: table-row; }
+
+.table-cell-contaiber {
+  padding: 2px 3px;
+  word-break: break-all;
+  display: table-cell;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000; }
+
+.table-header {
+  background-color: #cfcfcf;
+  font-weight: 600; }
+
 /*# sourceMappingURL=style.css.map */
