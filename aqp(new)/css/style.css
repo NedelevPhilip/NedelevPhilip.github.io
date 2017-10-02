@@ -155,6 +155,11 @@ table caption {
   margin: 10px 0;
 }
 
+th{
+  background-color: #484848;
+  color: #fff; 
+}
+
 table th,
 table td {
   border: 1px solid #484848;
@@ -163,8 +168,8 @@ table td {
 }
 
 
-.green-row{
-  background-color: #32f29b;
+.grey-row{
+  background-color: #cfcfcf;
 }
 
 @media screen and (max-width: 620px) {
