@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #007540;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.body-container {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #484848; }
+
+.center-container {
+  margin: auto;
+  max-width: 650px;
+  text-align: center; }
+
+.row-block {
+  display: table-row;
+  width: 100%; }
+
+.left-part {
+  background-color: #cfcfcf;
+  width: 140px;
+  display: table-cell;
+  vertical-align: top; }
+
+.right-part {
+  width: 500px;
+  display: table-cell; }
+
+.header-container {
+  background-color: #484848;
+  color: #fff;
+  padding: 20px 20px 0; }
+  .header-container p {
+    float: right;
+    width: 100%;
+    text-align: right;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0; }
+
+.header-logo {
+  display: block;
+  margin-top: 20px; }
+  .header-logo img {
+    width: 100px; }
+
+.header-logo-hidden {
+  display: none;
+  margin: 20px auto; }
+  .header-logo-hidden img {
+    width: 100px; }
+
+.header-top {
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 34px;
+  clear: both; }
+
+.attention-section {
+  background-color: #ff8a80;
+  border: solid 6px #ff5252;
+  padding: 15px 18px;
+  margin: 50px 0 0 20px; }
+
+.icon {
+  margin-top: 50px;
+  display: inline-block; }
+
+.icon-hidden {
+  width: 100px;
+  margin: 20px auto;
+  display: none; }
+
+.rows-block {
+  margin: 40px 20px 0; }
+  .rows-block img {
+    width: 100%; }
+
+.line {
+  padding-bottom: 20px;
+  border-bottom: #484848 1px solid; }
+
+.row-wrap {
+  margin-bottom: 15px;
+  text-align: left;
+  padding-right: 10px;
+  width: 100%; }
+  .row-wrap span {
+    color: #000; }
+
+.block-header {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #007540;
+  text-align: left;
+  margin: 10px 0; }
+
+.footer-image {
+  width: 100%;
+  margin: 30px 0;
+  display: inline-block; }
+
+.uppercase-text {
+  text-transform: uppercase;
+  text-align: left; }
+
+.italic-bold-text {
+  font-style: italic;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 40px; }
+
+.bold-text {
+  font-weight: 600;
+  text-align: left; }
+
+.bold-text {
+  font-weight: 700; }
+
+
+
+
+table {
+  border: 1px solid #484848;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #007540;
+  text-align: center;
+  margin: 10px 0;
+}
+
+th{
+  background-color: #484848;
+  color: #fff; 
+}
+
+table th,
+table td {
+  border: 1px solid #484848;
+  padding: 3px 5px;
+  text-align: center;
+}
+
+
+.grey-row{
+  background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 620px) {
+  .green-row{
+  background-color: #fff;
+  }
+  table, tr, td {
+    border: none!important;
+  }
+
+  tr {
+    border-left: solid 1px #484848!important;
+    border-top: solid 1px #484848!important;
+  }
+  td {
+    border-right: solid 1px #484848!important;
+    border-bottom: solid 1px #484848!important;
+  }
+
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

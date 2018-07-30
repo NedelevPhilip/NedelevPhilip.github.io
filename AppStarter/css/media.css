@@ -1,0 +1,159 @@
+@media only screen and (max-width : 1200px) {
+	.tablet{
+		margin-right: 0;
+	}
+	.press{
+		display: none;
+	}
+	.highlights2 .tile{
+		padding: 60px 80px 0 80px;
+	}
+	.highlights2 .tile img{
+		width: 320px;
+	}
+	.testimonials .item.left{
+		margin-right: 0;
+	}
+	.prices .text{
+		padding-top: 0;
+		text-align: center;
+	}
+	.prices .cards{
+		text-align: center;
+		margin-top: 30px;
+	}
+	.contact .input-wrap{
+		display: block;
+	}
+	.contact .input-wrap input{
+		width: 100%;
+	}
+	.contact .input-wrap input:first-child{
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	header{
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.features {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+	.features .item{
+		margin-bottom: 30px;
+	}
+	.highlights {
+	    padding: 50px 0 50px;
+	}
+	.highlights .item-wrap {
+		padding-top: 0;
+	}
+	.tablet{
+		margin: 30px auto;
+		float: none;
+		display: block;
+	}
+	.highlights2{
+		padding: 50px 0;
+	}
+	.highlights2 .tile{
+		flex-basis: auto;
+		padding: 80px 105px 0 80px !important;
+		height: auto;
+	}
+	.white-layer{
+		display: none;
+	}
+	.testimonials{
+		padding: 50px 0;
+	}
+	.testimonials .item{
+		float: none !important;
+		margin: 20px auto !important;
+	}
+	.testimonials .left-side .links{
+		right: 0;
+	}
+	.prices{
+		padding: 50px 0;
+	}
+	.prices .item.start{
+		margin: 30px  20px 0 20px;
+	}
+	.prices .item:hover{
+		transform: none;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.top-menu .dropdown-wrap{
+		left: -120px;
+	}
+	.top-menu .dropdown .hidden-nav{
+		display: block;
+	}
+	.top-menu .visible-nav{
+		display: none;
+	}
+	section.start{
+		padding: 50px 0;
+		text-align: center;
+	}
+	section.start .btn-wrap{
+		float: none;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	section.start .btn-wrap a{
+		margin: 10px 10px;
+	}
+	.testimonials .item{
+		width: auto;
+	}
+	.contact{
+		padding: 50px 0;
+	}
+	.contact .text-wrap {
+	    padding: 0 0 30px;
+	}
+	.contact #form{
+		padding: 20px;
+	}
+	footer .soc-wraper{
+		width: 140px;
+		margin: auto;
+	}
+	footer .center{
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	header .button{
+		margin: 10px 0;
+	}
+	.highlights .item{
+		width: 288px;
+	}
+	.highlights .item .img-wrap{
+		display: none;
+	}
+	.tablet{
+		width: 290px;
+	}
+	.video-tour .content-wrap{
+		padding: 50px 0;
+	}
+	.testimonials .item .content img{
+		display: none;
+	}
+	.prices .item{
+		width: 285px;
+	}
+	.prices .item.start{
+		margin: 30px  0 0;
+	}
+}
