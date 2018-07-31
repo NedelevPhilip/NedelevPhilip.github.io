@@ -153,7 +153,8 @@ header .logo{
 	opacity: 1;
 }
 header{
-	height: 720px;
+	height: 100vh;
+	/*height: 720px;*/
 }
 header .app-logo{
 	margin-top: 90px;
@@ -217,9 +218,12 @@ header .btn-wrap{
 .press a{
 	margin: 0 20px;
 	text-decoration: none !important;
+	display: inline-block;
+    width: 107px;
 }
 .press img{
 	transition: all .3s ease-out;
+	width: 100%;
 }
 .press img:hover{
 	transform: scale3d(1.2, 1.2, 2);
@@ -280,7 +284,7 @@ section.start .btn-wrap a{
 	text-align: center;
 	flex-basis: 50%;
 	padding: 90px 80px 0 80px;
-	overflow-y: hidden;
+	overflow: hidden;
 	height: 570px;
 }
 .highlights2 .tile p{
