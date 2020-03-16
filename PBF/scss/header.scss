@@ -1,0 +1,153 @@
+.header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.header__logo{
+    width: 184px;
+}
+
+.header__menu-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu-btn{
+    font-size: $font-size-middle;
+    color: $color-dark;
+    margin-left: 62px;
+    &:hover{
+        color: $color-dark;
+    }
+}
+
+.header_dark__menu-btn{
+    color: $color-super-light;
+    &:hover{
+        color: $color-super-light;
+    }
+}
+
+.header__menu-btn_active{
+    font-weight: bold;
+}
+
+
+
+
+//Burger start
+#menu__toggle {
+  opacity: 0;
+}
+
+.hamburger-menu{
+    z-index: 100;
+    position: relative;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $color-dark;
+  transition-duration: .25s;
+}
+.menu__btn_dark > span,
+.menu__btn_dark > span::before,
+.menu__btn_dark > span::after {
+    background-color: $color-gray;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: $color-white;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: $color-dark;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+//Burger finish
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .header__menu-btn{
+        margin-left: 15px;
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .header{
+        padding-top: 20px;
+    }
+}

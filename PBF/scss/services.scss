@@ -1,0 +1,108 @@
+.section-ecommerce{
+    padding: 110px 0 50px;
+}
+
+.section-ecommerce__img{
+    width: 100%;
+}
+
+.section-ecommerce__title{
+    margin: 110px auto 35px;
+    text-align: center;
+}
+
+.section-ecommerce__text{
+    font-size: 20px;
+    color: $color-gray;
+    padding-bottom: 30px;
+}
+
+.section-warehous{
+    padding: 100px 0;
+    background-color: $color-super-light;
+}
+
+.section-warehous__img{
+    width: 100%;
+}
+
+.section-warehous__title{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-warehous__text{
+    font-size: 20px;
+    color: $color-gray;
+    padding-bottom: 30px;
+}
+
+
+.section-cs{
+    padding: 100px 0 80px;
+}
+
+.section-cs__title{
+    margin-bottom: 50px;
+}
+
+.section-cs__text{
+    margin-bottom: 30px;
+}
+
+.section-cs__lists-wrap{
+    display: flex;
+    margin-top: 50px;
+}
+
+.section-cs__list{
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.section-cs__list-item{
+    font-size: 20px;
+    list-style: none;
+    color: $color-gray;
+}
+
+.section-cs__button{
+    margin-top: 150px;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .section-ecommerce{
+        padding-top: 30px;
+    }
+    .section-ecommerce__title{
+        margin-top: 30px;
+    }
+    .section-warehous{
+        padding: 30px 0;
+    }
+    .section-warehous__img{
+        margin-bottom: 30px;
+    }
+    .section-cs__lists-wrap{
+        flex-direction: column;
+
+    }
+
+    .section-cs__button{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}

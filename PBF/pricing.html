@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="application/x-navimap" href="./css/bootstrap/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.min.css">
+    <link rel="application/x-navimap" href="./css/bootstrap/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tzi1fgt.css">
+
+    <title>PBF-Pricing</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="header__logo-wrap" href="./index.html">
+                        <img class="header__logo" src="./img/logo-dark.png" alt="PBF logo">
+                    </a>
+                </div>
+
+                <div class="d-block d-sm-none">
+                    <div class="hamburger-menu">
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                      <ul class="menu__box">
+                        <li><a class="menu__item" href="./about.html">About</a></li>
+                        <li><a class="menu__item" href="./services.html">Services</a></li>
+                        <li><a class="menu__item" href="./clients.htm">Clients</a></li>
+                        <li><a class="menu__item" href="./pricing.html">Pricing</a></li>
+                      </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 d-none d-sm-block">
+                    <div class="header__menu-wrap">
+                        <a class="header__menu-btn" href="./about.html">About</a>
+                        <a class="header__menu-btn" href="./services.html">Services</a>
+                        <a class="header__menu-btn" href="./clients.html">Clients</a>
+                        <a class="header__menu-btn header__menu-btn_active" href="./pricing.html">Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__estimate">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h2 class="title section__estimate__title">Estimated quote</h2>
+                    <span class="section__estimate__block-name">1. Pick & Pack</span>
+                    <div class="section__estimate__block">
+                        <span class="section__estimate__input-question">
+                            How many orders do you fulfil a month?
+                        </span>
+                        <div class="section__estimate__input-wrap">
+                            <input id="orders-month"
+                                class="section__estimate__input"
+                                type="range"
+                                value="50"
+                                min="50"
+                                max="1000">
+                            <span id="orders-month-val" class="section__estimate__value"></span>
+                        </div>
+                        <div class="section__estimate__input-descr">
+                            Minimum orders / month = 50
+                        </div>
+                        <span class="section__estimate__input-question">
+                            What's your average number of items per order?
+                        </span>
+                        <div class="section__estimate__input-wrap">
+                            <input id="average-order"
+                                class="section__estimate__input"
+                                type="range"
+                                value="1"
+                                min="1"
+                                max="100">
+                            <span id="average-order-val" class="section__estimate__value"></span>
+                        </div>
+                    </div>
+                    <span class="section__estimate__block-name">2. Store</span>
+                    <div class="section__estimate__block">
+                        <span class="section__estimate__input-question">
+                            How much space do you need?
+                        </span>
+                        <div class="section__estimate__input-wrap">
+                            <input id="space"
+                                class="section__estimate__input"
+                                type="range"
+                                value="1"
+                                min="1"
+                                max="1000">
+                            <span id="space-val" class="section__estimate__value"></span>
+                        </div>
+                        <div class="section__estimate__input-descr" style="margin-bottom: 0;">
+                            1 pallet = approx. 1m³ / 35ft³
+                        </div>
+
+                    </div>
+                    <span class="section__estimate__block-name">3. Send options</span>
+                    <span class="section__estimate__block-subname">Select your preferred send option</span>
+                    <div id="pricesWrap" class="section__estimate__plans-wrap">
+
+                    </div>
+                </div>
+                <div class="col-1 d-none d-xl-block"></div>
+                <div class="col-12 col-md-5 col-xl-4">
+                    <div class="ection__estimate__result-block">
+                        <div class="ection__estimate__title">
+                            Your estimate
+                        </div>
+                        <div class="ection__estimate__item">
+                            <div class="ection__estimate__left">
+                                <span class="ection__estimate__name">
+                                    Pick & Pack
+                                </span>
+                                <div id="pipkpack" class="ection__estimate__prise"></div>
+                            </div>
+                            <div class="ection__estimate__right">
+                                per order
+                            </div>
+                        </div>
+                        <div class="ection__estimate__item">
+                            <div class="ection__estimate__left">
+                                <span class="ection__estimate__name">
+                                    Store
+                                </span>
+                                <div  id="store" class="ection__estimate__prise"></div>
+                            </div>
+                            <div class="ection__estimate__right">
+                                per month
+                            </div>
+                        </div>
+                        <div class="ection__estimate__item">
+                            <div class="ection__estimate__left">
+                                <span class="ection__estimate__name">
+                                    Send
+                                </span>
+                                <div id="send" class="ection__estimate__prise"></div>
+                            </div>
+                            <div class="ection__estimate__right">
+                                per month
+                            </div>
+                        </div>
+                        <hr/ style="background: #fff; height: 2px;">
+                        <div class="ection__estimate__name">Total</div>
+                        <div class="ection__estimate__result-wrap">
+                            <div id="total" class="ection__estimate__prise"></div>
+                            <div class="ection__estimate__right">
+                                per month
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="button ection__estimate__button">Work with us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title section-form__title">
+                    Work with us
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form class="section-form__form" action="#"  method="POST">
+                        <label for="input1" class="section-form__label">Your name</label>
+                        <input type="text" id="input1" name="name" class="section-form__input">
+
+                        <label for="input2" class="section-form__label">Your email address</label>
+                        <input type="email" id="input2" name="email" class="section-form__input">
+
+                        <label for="input3" class="section-form__label">Your phone number</label>
+                        <input type="text" id="input3" name="phone" class="section-form__input">
+
+                        <label for="input4" class="section-form__label">Which service are you interested in?</label>
+                        <select id="input4" name="service" class="section-form__input">
+                            <option disabled selected value style="display:none"></option>
+                            <option value="var1">Service 1</option>
+                            <option value="var2">Service 2</option>
+                            <option value="var3">Service 3</option>
+                        </select>
+
+                        <label for="input5" class="section-form__label">Your message</label>
+                        <textarea name="message"
+                            id="input5"
+                            class="section-form__input section-form__textarea"></textarea>
+
+                        <button type="submit" class="button section-form__button">
+                            Work with us →
+                        </button>
+                    </form>
+                </div>
+                <div class="col-1 d-none d-xl-block"></div>
+                <div class="col-12 col-md-6 col-xl-5">
+                    <span class="section-form__text">
+                        You can call us on <b>0161 672 5430.</b>
+                    </span>
+                    <span class="section-form__text">
+                        <b>Find us at:</b>
+                    </span>
+                    <span class="section-form__text">
+                        Alexandria Drive,<br/>
+                        Ashton-under-Lyne,<br/>
+                        OL7 0QN
+                    </span>
+                    <span class="section-form__text">
+                        Our opening hours are Monday-Friday 9am-6pm.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img class="waves" src="./img/waves.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 col-12">
+                    <div class="footer__column-wrap">
+                        <h3 class="footer__title">Get in touch</h3>
+                        <span class="footer__text" style="margin-bottom: 20px;">
+                            Unit 7, Alexandria Drive,<br/>
+                            Ashton-under-Lyne,<br/>
+                            OL7 0QN
+                        </span>
+                        <span class="footer__text">
+                            0161 672 5430<br/>
+                            info@pbfulfilment.co.uk
+                        </span>
+                    </div>
+                </div>
+                <div class="col-2 d-none d-xl-block"></div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 col-12">
+                    <div class="footer__column-wrap">
+                        <h3 class="footer__title">Our Services</h3>
+                        <span class="footer__text">
+                            Warehousing & Stock Management<br/>
+                            Pick & Pack<br/>
+                            Shipping & Returns<br/>
+                            Returns Management<br/>
+                            Customer Service<br/>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-2 d-none d-xl-block"></div>
+                <div class="col-lg-6 col-xl-4 col-12">
+                    <div class="footer__column-wrap">
+                        <h3 class="footer__title">PB Fulfilment</h3>
+                        <span class="footer__text">
+                            PB Fulfilment was established as Paton Brown in 1960
+                            and have been packing, fulfilling and sending out mail
+                            and parcels on behalf of our clients to their customers
+                            for 60 years.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <span class="footer__text footer__copyright">
+                    © 2020 PB Fulfilment Ltd. Registered in England and Wales #11849491.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>

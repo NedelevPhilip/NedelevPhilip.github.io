@@ -1,0 +1,103 @@
+@import "const";
+@import "header";
+@import "footer";
+@import "home";
+@import "pricing";
+@import "about";
+@import 'services';
+@import 'clients';
+
+body{
+    font-family: $font-main, sans-serif;
+
+    a:hover{
+        text-decoration: none;
+    }
+}
+
+.title{
+    font-size: $font-size-large;
+    font-weight: bold;
+    letter-spacing: 0.96px;
+}
+
+.text{
+    font-size: $font-size-middle;
+}
+
+.text_light{
+    color: $color-super-light;
+}
+
+.button{
+    display: inline-flex;
+    font-size: $font-size-middle;
+    font-weight: 800;
+    padding: 18px 47px;
+    color: $color-dark;
+    border: 2px solid $color-dark;
+    border-radius: 5px;
+}
+.button:hover{
+    color: $color-dark;
+}
+
+.button_light{
+    border-color: $color-super-light;
+    color: $color-super-light;
+}
+.button_light:hover{
+    color: $color-super-light;
+}
+
+.button_white{
+    border: none;
+    background-color: #fff;
+    color: $color-dark;
+}
+
+.waves{
+    position: absolute;
+    top: -90px;
+    right: 0;
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .waves{
+        height: 50px;
+        top: -50px;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .title{
+        font-size: 36px;
+    }
+    .button{
+        font-weight: 700;
+        padding: 13px 32px;
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .title{
+        font-size: 28px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .button{
+        font-weight: 700;
+        padding: 10px 23px;
+    }
+    .waves{
+        height: 30px;
+        top: -30px;
+    }
+}

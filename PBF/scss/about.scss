@@ -1,0 +1,64 @@
+.section-about{
+    padding: 160px 0 280px;
+}
+
+.section-about__img{
+    width: 100%;
+}
+
+.section-about__title{
+    padding: 0;
+    margin: 0 0 50px;
+}
+
+.section-about__text{
+    margin-bottom: 35px;
+}
+
+.section-about__buttons-wrap  {
+    margin-top: 20px;
+    display: flex;
+}
+
+.section-about__buttons-wrap :first-child{
+    margin-right: 50px;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .section-about{
+        padding: 80px 0 140px;
+    }
+    .section-about__img{
+        margin-bottom: 30px;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .section-about{
+        padding: 50px 0 80px;
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .section-about{
+        padding: 30px 0 50px;
+    }
+    .section-about__buttons-wrap  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-about__button{
+        width: 258px;
+    }
+
+    .section-about__buttons-wrap :first-child{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
