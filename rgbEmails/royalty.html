@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../css/emails.css">
+</head>
+
+
+<body>
+<div class="email-body">
+    <div class="header">
+        <div class="header__left-side">
+            <img class="header__ceo-avatar" src="http://rgb.academy/img/aslobo.png">
+            <div class="header__ceo-contacts">
+                <span class="header__ceo-name">
+                    Александр Слободской
+                </span>
+                <a class="link header__ceo-email" href="mailto: oleksandr@rgb.academy">
+                    oleksandr@rgb.academy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box margin_bottom_2">
+        <h2 class="title-2 margin_bottom_2">
+            Статистика за {{ $date->format('M') }}
+        </h2>
+
+        <p class="text">
+            Ваши уроки посмотрели – {{ $royalty->views_count }} раз, </br>
+            комиссия составляет – {{ number_format($royalty->sum, 2) }} грн.
+        </p>
+    </div>
+
+    <span class="title-3">
+        Есть вопросы или</br>идеи для новых уроков?
+    </span>
+    <p class="text margin_top_2">
+        Вы можете написать ответ на это письмо</br>
+        или использовать имейл – oleksandr@rgb.academy.
+    </p>
+
+</div>
+</body>
+</html>

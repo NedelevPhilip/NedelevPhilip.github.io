@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подписка оплачена</title>
+
+    <link rel="stylesheet" href="../css/emails.css">
+</head>
+
+
+<body>
+<div class="email-body">
+    <div class="header">
+        <div class="header__left-side">
+            <img class="header__ceo-avatar" src="http://rgb.academy/img/aslobo.png">
+            <div class="header__ceo-contacts">
+                <span class="header__ceo-name">
+                    Александр Слободской
+                </span>
+                <a class="link header__ceo-email" href="mailto: oleksandr@rgb.academy">
+                    oleksandr@rgb.academy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+
+        <h2 class="title-2 margin_bottom_2">
+            Подписка оплачена 👌
+        </h2>
+
+
+        <p class="text margin_bottom_2">
+            Вы оплатили доступ на {{ $period }}, до {{ $user->subs_before }}.
+        </p>
+
+        <p class="text margin_bottom_2">
+            У вас активировано автопродление подписки, вы можете отключить его на странице подписки.
+        </p>
+
+        <a class="button_accent_large" href="{{ route('f.skills') }}">
+            <span class="button__text">
+                Войти
+            </span>
+        </a>
+
+    </div>
+
+
+
+</div>
+</body>
+</html>
