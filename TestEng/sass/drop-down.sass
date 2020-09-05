@@ -1,0 +1,31 @@
+.drop-down-wrap
+  display: inline-block
+  position: relative
+  margin-right: 15px
+
+
+.drop-down__container
+  opacity: 0
+  transition: opacity .3s
+  //pointer-events: none
+  position: absolute
+  right: 0
+  top: 34px
+  z-index: 1000
+  padding-top: 17px
+
+.drop-down__content
+  border-radius: $border-fat
+  color: $color-super-light
+  background-color: $color-brand
+  padding: 20px
+  width: 500px
+  text-align: left
+  border-radius: $radius-big
+
+
+@media (max-width: 575.98px)
+  .drop-down__container
+    right: -90px
+  .drop-down__content
+    width: 290px
