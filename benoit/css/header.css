@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background: #2472a0;
+    background: linear-gradient(to right, #2472a0 0%,#3d4386 60%,#590e69 90%);
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.2);
+    min-height: 60px;
+    max-height: 70px;
+}
+.header > * {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    max-height: 45px;
+    vertical-align: middle;
+}
+.header-left {
+    justify-content: start;
+}
+.header-center {
+    flex: 10;
+    justify-content: center;
+}
+.header-right {
+    justify-content: end;
+}

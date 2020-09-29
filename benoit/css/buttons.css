@@ -1,0 +1,95 @@
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons-set.png);
+    background-repeat: no-repeat;
+}
+.icon.icon-home {
+    background-position: 1px -27px;
+}
+.icon.icon-search {
+    background-position: -86px -27px;
+}
+.icon.icon-heart {
+    background-position: -27px -27px;
+}
+.icon.icon-user {
+    background-position: -117px -27px;
+}
+.icon.icon-flag {
+    background-position: -56px -27px;
+}
+.icon.icon-send2 {
+    background-position: -208px -27px;
+}
+.icon.icon-comment {
+    background-position: -150px -27px;
+}
+.icon.icon-camera {
+    background-position: -168px 3px;
+}
+.icon.icon-reload {
+    background-position: -247px 4px;
+}
+.icon.icon-send {
+    background-position: -208px 5px;
+}
+.icon.icon-credit {
+    background-position: -57px 5px;
+}
+.icon.icon-male {
+    background-position: -117px 5px;
+}
+.icon.icon-female {
+    background-position: -87px 5px;
+}
+
+.btn-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/gender-icons.png);
+    background-repeat: no-repeat;
+}
+.btn-icon.btn-icon-male {
+    background-position: 8px 4px;
+}
+.btn-icon.btn-icon-female {
+    background-position: -126px 4px;
+}
+
+.btn {
+    padding: 0.5em 0.8em 0.4em;
+    border-radius: 3px;
+    border: 0;
+    line-height: 1;
+    transition: all 300ms linear;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn.btn-primary {
+    background-color: #74b700;
+    color: #ffffff;
+}
+.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn-yes {
+    display: block;
+    margin: 0 auto;
+    padding: 1.25em 0;
+    width: 40%;
+    border: 0;
+    border-radius: 4px;
+    background-color: #35528f;
+    cursor: pointer;
+    transition: opacity 300ms linear;
+    font-size: 1.3em;
+    text-align: center;
+    color: #ffffff;
+}
+.btn-yes:hover {
+    opacity: 0.7;
+}

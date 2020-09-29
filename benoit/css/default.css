@@ -1,0 +1,160 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000000;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+input, button, select {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.pxl,
+.hidden {
+    display: none !important;
+}
+
+p, ul, li, ol, h1, h2, h3, h4, h5, figure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+html,
+body,
+.wrapper {
+    min-height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.wrapper > * {
+    flex: 1;
+}
+.wrapper > .main-content {
+    flex: 7;
+    margin-top: 2em;
+}
+.wrapper.is-headline-top > .main-content {
+    margin-top: 0;
+}
+.wrapper .headline-top {
+    display: none;
+}
+.wrapper.is-headline-top .headline-top {
+    display: block;
+}
+.wrapper.is-headline-top .headline-top h1 {
+    display: block;
+    font-size: 1.5em;
+    margin: .5em .1em;
+    color: #35528f;
+    text-align: center;
+    font-weight: 700;
+}
+.wrapper .header,
+.wrapper .profiles-wrapper {
+    padding: 0 1em;
+}
+.wrapper .progress-bar-wrapper {
+    max-height: 25px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 55em;
+}
+
+.registration-form-builder-wrapper > .container {
+    display: flex;
+    flex-direction: column;
+}
+.registration-form-builder,
+.girl-frame {
+    flex: 1;
+}
+
+@media (min-width: 568px) and (max-height: 600px) {
+    .container {
+        width: 70%;
+    }
+}
+@media (min-width: 768px) and (min-height: 550px) {
+    .registration-form-builder-wrapper > .container {
+        flex-direction: row;
+    }
+    .registration-form-builder {
+        order: 2;
+    }
+    .girl-frame {
+        order: 1;
+        margin-right: 1em;
+    }
+}
+
+@media (min-height: 780px) {
+    body {
+        font-size: 1.7vh;
+    }
+    html,
+    body,
+    .wrapper {
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .wrapper > .main-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vh;
+    }
+    .wrapper.is-headline-top > .main-content {
+        margin-top: 0;
+    }
+    .registration-form-builder-wrapper {
+        flex: 15;
+    }
+    .navigation-wrapper {
+        flex: 1;
+    }
+}
