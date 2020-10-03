@@ -393,15 +393,67 @@
         var iconSize = [114, 152];
         var zoom = 13;
 
+        var d =  [
+            {'x' : 0.008, 'y' : 0.015},
+            {'x' : 0.002, 'y' : 0.063},
+            {'x' : 0.009, 'y' : 0.044},
+            {'x' : 0.008, 'y' : 0.084},
+            {'x' : 0.002, 'y' : 0.046},
+            {'x' : 0.007, 'y' : 0.063},
+            {'x' : 0.006, 'y' : 0.035},
+            {'x' : 0.009, 'y' : 0.072},
+            {'x' : 0.011, 'y' : 0.075},
+            {'x' : 0.004, 'y' : 0.014},
+        ];
+
         if(deviceWidth < 481) {
             iconSize = [32, 43];
             zoom = 11,5;
+
+            d =  [
+                {'x' : 0.02, 'y' : 0.015},
+                {'x' : 0.03, 'y' : 0.063},
+                {'x' : -0.09, 'y' : 0.044},
+                {'x' : 0.01, 'y' : 0.084},
+                {'x' : 0.08, 'y' : 0.046},
+                {'x' : 0.01, 'y' : 0.063},
+                {'x' : 0.04, 'y' : 0.035},
+                {'x' : 0.05, 'y' : 0.072},
+                {'x' : 0.07, 'y' : 0.075},
+                {'x' : -0.03, 'y' : 0.014},
+            ];
         } else if(deviceWidth < 768) {
             iconSize = [54, 72];
             zoom = 12;
+
+            d =  [
+                {'x' : 0.02, 'y' : 0.015},
+                {'x' : 0.02, 'y' : 0.063},
+                {'x' : -0.025, 'y' : 0.044},
+                {'x' : 0.005, 'y' : 0.084},
+                {'x' : 0.04, 'y' : 0.046},
+                {'x' : 0.01, 'y' : 0.063},
+                {'x' : 0.039, 'y' : 0.035},
+                {'x' : 0.05, 'y' : 0.072},
+                {'x' : 0.35, 'y' : 0.075},
+                {'x' : -0.01, 'y' : 0.014},
+            ];
         } else if (deviceWidth < 992){
             iconSize = [72, 96];
             zoom = 12,5;
+
+            d =  [
+                {'x' : 0.02, 'y' : 0.015},
+                {'x' : 0.02, 'y' : 0.063},
+                {'x' : -0.045, 'y' : 0.044},
+                {'x' : 0.005, 'y' : 0.084},
+                {'x' : 0.015, 'y' : 0.046},
+                {'x' : 0.01, 'y' : 0.063},
+                {'x' : 0.02, 'y' : 0.035},
+                {'x' : 0.02, 'y' : 0.09},
+                {'x' : 0.02, 'y' : 0.09},
+                {'x' : -0.01, 'y' : 0.014},
+            ];
         }
 
 
@@ -433,16 +485,16 @@
         var m9 = new LeafIcon({iconUrl: './img/g9.png',});
         var m10 = new LeafIcon({iconUrl: './img/g10.png',});
 
-        L.marker([x + 0.008, y - 0.015], {icon: m1}).addTo(map);
-        L.marker([x + 0.002, y - 0.063], {icon: m2}).addTo(map);
-        L.marker([x + 0.009, y - 0.044], {icon: m3}).addTo(map);
-        L.marker([x + 0.008, y - 0.084], {icon: m4}).addTo(map);
-        L.marker([x - 0.002, y + 0.046], {icon: m5}).addTo(map);
-        L.marker([x + 0.007, y + 0.063], {icon: m6}).addTo(map);
-        L.marker([x - 0.006, y - 0.035], {icon: m7}).addTo(map);
-        L.marker([x - 0.009, y + 0.072], {icon: m8}).addTo(map);
-        L.marker([x - 0.011, y - 0.075], {icon: m9}).addTo(map);
-        L.marker([x + 0.004, y + 0.014], {icon: m10}).addTo(map);
+        L.marker([x + d[0].x, y - d[0].y], {icon: m1}).addTo(map);
+        L.marker([x + d[1].x, y - d[1].y], {icon: m2}).addTo(map);
+        L.marker([x + d[2].x, y - d[2].y], {icon: m3}).addTo(map);
+        L.marker([x + d[3].x, y - d[3].y], {icon: m4}).addTo(map);
+        L.marker([x - d[4].x, y + d[4].y], {icon: m5}).addTo(map);
+        L.marker([x + d[5].x, y + d[5].y], {icon: m6}).addTo(map);
+        L.marker([x - d[6].x, y - d[6].y], {icon: m7}).addTo(map);
+        L.marker([x - d[7].x, y + d[7].y], {icon: m8}).addTo(map);
+        L.marker([x - d[8].x, y - d[8].y], {icon: m9}).addTo(map);
+        L.marker([x + d[9].x, y + d[9].y], {icon: m10}).addTo(map);
 
     });
 
