@@ -208,7 +208,8 @@
                 <p class="text-danger w-100 text-center">Pour effectuer cette action vous devez être inscrit !</p>
                 <h5 class="w-100 text-center">Inscription immédiate</h5>
 
-                <form name="form" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-minlength ng-valid-email">
+                <form name="form"
+                      class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-minlength ng-valid-email">
                     <div class="input-group mb-2">
                         <div class="input-group-text"><i class="fa fa-male" aria-hidden="true"></i></div>
                         <select class="form-control form-control-lg ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required"
@@ -383,14 +384,31 @@
 
 <script>
     /*--------------------------MAP-------------------------------------*/
-    $.getJSON('https://ipinfo.io/json', function(data) {
+    $.getJSON('https://ipinfo.io/json', function (data) {
 
         var locArray = data.loc.split(",");
+
+        var deviceWidth = document.documentElement.clientWidth;
+
+        var iconSize = [114, 152];
+        var zoom = 13;
+
+        if(deviceWidth < 481) {
+            iconSize = [32, 43];
+            zoom = 11,5;
+        } else if(deviceWidth < 768) {
+            iconSize = [54, 72];
+            zoom = 12;
+        } else if (deviceWidth < 992){
+            iconSize = [72, 96];
+            zoom = 12,5;
+        }
+
 
         var x = parseFloat(locArray[0]),
             y = parseFloat(locArray[1]);
 
-        var map = L.map('mapid').setView([x, y], 13);
+        var map = L.map('mapid').setView([x, y], zoom);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -399,21 +417,21 @@
 
         var LeafIcon = L.Icon.extend({
             options: {
-                iconSize:     [114, 152],
-                iconAnchor:   [22, 94]
+                iconSize: iconSize,
+                iconAnchor: [22, 94]
             }
         });
 
-        var m1 = new LeafIcon({iconUrl: './img/g1.png', });
-        var m2 = new LeafIcon({iconUrl: './img/g2.png', });
-        var m3 = new LeafIcon({iconUrl: './img/g3.png', });
-        var m4 = new LeafIcon({iconUrl: './img/g4.png', });
-        var m5 = new LeafIcon({iconUrl: './img/g5.png', });
-        var m6 = new LeafIcon({iconUrl: './img/g6.png', });
-        var m7 = new LeafIcon({iconUrl: './img/g7.png', });
-        var m8 = new LeafIcon({iconUrl: './img/g8.png', });
-        var m9 = new LeafIcon({iconUrl: './img/g9.png', });
-        var m10 = new LeafIcon({iconUrl: './img/g10.png', });
+        var m1 = new LeafIcon({iconUrl: './img/g1.png',});
+        var m2 = new LeafIcon({iconUrl: './img/g2.png',});
+        var m3 = new LeafIcon({iconUrl: './img/g3.png',});
+        var m4 = new LeafIcon({iconUrl: './img/g4.png',});
+        var m5 = new LeafIcon({iconUrl: './img/g5.png',});
+        var m6 = new LeafIcon({iconUrl: './img/g6.png',});
+        var m7 = new LeafIcon({iconUrl: './img/g7.png',});
+        var m8 = new LeafIcon({iconUrl: './img/g8.png',});
+        var m9 = new LeafIcon({iconUrl: './img/g9.png',});
+        var m10 = new LeafIcon({iconUrl: './img/g10.png',});
 
         L.marker([x + 0.008, y - 0.015], {icon: m1}).addTo(map);
         L.marker([x + 0.002, y - 0.063], {icon: m2}).addTo(map);
@@ -428,11 +446,7 @@
 
     });
 
-    // map.locate({setView: true, watch: true});
-
     /*--------------------------VALIDATION-------------------------------------*/
-
-
     $("#contact_name").on("change paste keyup", function () {
         var e = $(this),
             a = e.val();
@@ -454,9 +468,9 @@
             a = e.val(),
             t = new RegExp('^((06)|(07))[0-9]{0,8}$', 'i');
 
-            var errorEl = $("#phone-input-error");
+        var errorEl = $("#phone-input-error");
 
-        if (! a.match(t)) {
+        if (!a.match(t)) {
             $("#phone-input-check").hide();
             errorEl.show();
 
@@ -470,10 +484,6 @@
             errorEl.hide();
         }
     });
-
-
-
-
 </script>
 
 <script type="text/javascript" src="mferx.js"></script>
