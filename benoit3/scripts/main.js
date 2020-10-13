@@ -1,12 +1,3 @@
-jQuery(document).ready(function () {
-    const imageUrl1 = './img/HARD-GEN-01.jpg';
-    const imageUrl2 = './img/HARD-GEN-02.jpg';
-    const imageUrl3 = './img/HARD-GEN-03.jpg';
-    jQuery('.backgroundImage1').attr("src", imageUrl1);
-    jQuery('.backgroundImage2').attr("src", imageUrl2);
-    jQuery('.backgroundImage3').attr("src", imageUrl3);
-});
-
 function changeThumb(index) {
     const step5 = jQuery("#step5");
     if (index < +step5.attr('thumbs-size') + 1) {
@@ -104,9 +95,53 @@ $('#age').change(function() {
 $("#phone").on("change paste keyup", function () {
     var e = $(this),
         a = e.val(),
-        t = new RegExp('^((06)|(07))[0-9]{8}$', 'i');
+        t = new RegExp('^((06)|(07))', 'i');
 
-    var errorEl = $("#phone-input-error");
+    if(a.length >= 2){
+        if (!a.match(t)) {
+            $('#phoneBadge').removeClass('form_badge_valid');
+            $('#phoneCheck').removeClass('form_badge_valid');
+
+            $('#phoneBadge').addClass('form_badge_wrong');
+            $('#phoneCheck').addClass('form_badge_wrong');
+
+            $('#phoneCheck').find('i').addClass('fa-times');
+            $('#phoneCheck').find('i').removeClass('fa-check');
+
+            var errorEl = $('#phoneWrong');
+            $('#phoneMessage').hide();
+            errorEl.show();
+
+            if (a === "") {
+                errorEl.html("Merci d’indiquer votre téléphone");
+            } else {
+                errorEl.html("Merci de renseigner votre numéro de portable commençant par 06 ou 07");
+            }
+
+            phoneValid = false;
+        } else {
+            $('#phoneBadge').removeClass('form_badge_wrong');
+            $('#phoneCheck').removeClass('form_badge_wrong');
+
+            $('#phoneCheck').find('i').addClass('fa-check');
+            $('#phoneCheck').find('i').removeClass('fa-times');
+
+            $('#phoneMessage').show();
+            $('#phoneWrong').hide();
+
+            phoneValid = true;
+        }
+
+        checkValid();
+    }
+
+});
+
+
+$("#phone").on("change", function () {
+    var e = $(this),
+        a = e.val(),
+        t = new RegExp('^[0-9]{10}$', 'i');
 
     if (!a.match(t)) {
         //Error
@@ -127,7 +162,7 @@ $("#phone").on("change paste keyup", function () {
         if (a === "") {
             errorEl.html("Merci d’indiquer votre téléphone");
         } else {
-            errorEl.html("Merci de renseigner votre numéro de portable commençant par 06 ou 07");
+            errorEl.html("Merci, votre numéro de téléphone doit être composé de 10 chiffres");
         }
 
         phoneValid = false;
